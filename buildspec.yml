@@ -1,9 +1,5 @@
 version: 0.2
 
-env:
-  parameter-store:
-    PASSWORD: /Production/AppPassword
-
 phases: 
     install:
         runtime-versions:
@@ -15,7 +11,6 @@ phases:
         commands: 
             - echo "⚙️ Testing..."
             - echo "✅ Tests passed successfully."
-            - echo $PASSWORD
     build:
         commands:
             - echo "🚧 Starting compiling packages..."
